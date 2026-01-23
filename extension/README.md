@@ -1,6 +1,6 @@
 # Producer.ai Download Suite
 
-**Version 3.2** | *By ransomletter*
+**Version 3.2** | *By rnsmlttr*
 
 The ultimate downloading toolkit for Producer.ai. This universal browser extension transforms your workflow by taking advantage of the new bulk download functions Prod added, allowing for bulk downloads of tracks, stems, and diverse formats with powerful organization features.
 
@@ -67,7 +67,7 @@ Follow the standard [Installation](#-installation) instructions above.
 2. Run the following command in Terminal:
    
    ```bash
-   xcrun safari-web-extension-converter /path/to/producer_wav_downloader
+   xcrun safari-web-extension-converter /path/to/producerai/extension
    ```
 
 3. Follow the prompts to build and run the extension in Safari.

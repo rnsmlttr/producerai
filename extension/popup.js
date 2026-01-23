@@ -58,3 +58,21 @@ document.getElementById('themeMode').addEventListener('change', async (e) => {
         });
     }
 });
+
+document.getElementById('loadAllBtn').addEventListener('click', async () => {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+    if (tab.url && tab.url.includes("producer.ai")) {
+        // ensure script is injected
+        chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            files: ['content.js']
+        }).then(() => {
+            chrome.tabs.sendMessage(tab.id, { type: "SCROLL_TO_BOTTOM" });
+        }).catch(() => {
+            chrome.tabs.sendMessage(tab.id, { type: "SCROLL_TO_BOTTOM" });
+        });
+    } else {
+        alert("Please navigate to a Producer.ai page first.");
+    }
+});

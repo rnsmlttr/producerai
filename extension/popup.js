@@ -6,6 +6,7 @@ document.getElementById('downloadBtn').addEventListener('click', async () => {
         const mode = document.getElementById('downloadMode').value;
         const folder = document.getElementById('folderMode').value;
         const format = document.getElementById('formatMode').value;
+        const meta = document.getElementById('metadataMode').value;
 
         // inject script
         await chrome.scripting.executeScript({
@@ -17,7 +18,7 @@ document.getElementById('downloadBtn').addEventListener('click', async () => {
         setTimeout(() => {
             chrome.tabs.sendMessage(tab.id, {
                 type: "INIT_DOWNLOADER",
-                config: { mode, folder, format }
+                config: { mode, folder, format, meta }
             });
         }, 100);
 

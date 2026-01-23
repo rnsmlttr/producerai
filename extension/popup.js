@@ -76,7 +76,6 @@ document.getElementById('loadAllBtn').addEventListener('click', async () => {
     } else {
         alert("Please navigate to a Producer.ai page first.");
     }
-}
 });
 
 document.getElementById('searchBtn').addEventListener('click', async () => {

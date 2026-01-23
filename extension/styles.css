@@ -253,3 +253,87 @@ body[data-pai-theme="coral"] button {
     z-index: 2147483647;
     border-top: 1px solid #444;
 }
+
+/* search toolbar */
+.pai-search-toolbar {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 9990;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; margin-top: 10px; }
+}
+
+.pai-search-input {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 200px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.pai-search-input:focus {
+    background: rgba(255,255,255,0.12);
+    border-color: #007bff;
+    width: 240px;
+}
+
+.pai-search-stat {
+    font-size: 12px;
+    color: #aaa;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: right;
+}
+
+.pai-search-btn {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.pai-search-btn:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+
+/* filter dropdown */
+.pai-filter-select {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #eee;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.pai-filter-select option {
+    background: #222;
+    color: #fff;
+}

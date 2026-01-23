@@ -75,4 +75,27 @@ document.getElementById('loadAllBtn').addEventListener('click', async () => {
     } else {
         alert("Please navigate to a Producer.ai page first.");
     }
+}
+});
+
+document.getElementById('searchBtn').addEventListener('click', async () => {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+    if (tab.url && tab.url.includes("producer.ai")) {
+        // ensure script is injected
+        chrome.scripting.insertCSS({ target: { tabId: tab.id }, files: ['styles.css'] }).catch(() => { });
+
+        chrome.scripting.executeScript({
+            target: { tabId: tab.id },
+            files: ['content.js']
+        }).then(() => {
+            chrome.tabs.sendMessage(tab.id, { type: "TOGGLE_SEARCH" });
+            window.close();
+        }).catch(() => {
+            chrome.tabs.sendMessage(tab.id, { type: "TOGGLE_SEARCH" });
+            window.close();
+        });
+    } else {
+        alert("Please navigate to a Producer.ai page first.");
+    }
 });

@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "/core-platform/studio-interface",
+    "title": "Studio Interface",
+    "description": "Interactive walkthrough of the new Agentic workspace.",
+    "content": "# The Studio Interface\n\nInteractive walkthrough of the new Agentic workspace. Hover over the panels to learn their functions.\n\n![Studio Interface Mockup](/images/studio-interface.png)\n\n## The Library\n\nAccess your history, saved riffs, and drag-and-drop 'Vibes' into the chat.\n",
+    "_searchMeta": {
+      "cleanContent": "the studio interface interactive walkthrough of the new agentic workspace hover over the panels to learn their functions studio interface mockup the library access your history saved riffs and drag-and-drop vibes into the chat",
+      "headings": [
+        "The Library"
+      ],
+      "keywords": [
+        "The Library"
+      ]
+    }
+  },
+  {
+    "slug": "/core-platform/tools-features",
+    "title": "Tools & Features",
+    "description": "Overview of slash commands and core capabilities.",
+    "content": "# Tools & Features\n\n## Slash Commands\n\nQuickly trigger specific actions in the chat interface.\n\n| Command | Action | Example |\n| :--- | :--- | :--- |\n| `/create` | Skip conversation, generate instantly | `/create jazz piano lo-fi` |\n| `/remix` | Modify the selected track | `/remix add reverb` |\n| `/stems` | Separate audio components | `Exports WAVs` |\n\n## Core Capabilities\n",
+    "_searchMeta": {
+      "cleanContent": "tools features slash commands quickly trigger specific actions in the chat interface command action example:--- :--- :--- create skip conversation generate instantly create jazz piano lo-fi remix modify the selected track remix add reverb stems separate audio components exports wavs core capabilities",
+      "headings": [
+        "Slash Commands",
+        "Core Capabilities"
+      ],
+      "keywords": [
+        "Slash Commands",
+        "Core Capabilities",
+        "/create",
+        "/create jazz piano lo-fi",
+        "/remix",
+        "/remix add reverb",
+        "/stems",
+        "Exports WAVs"
+      ]
+    }
+  },
+  {
+    "slug": "/getting-started/fuzz-engine",
+    "title": "The FUZZ Engine",
+    "description": "Technical breakdown of the model improvements over the legacy spectrogram diffusion methods.",
+    "content": "# The FUZZ-2.0 Engine\n\nTechnical breakdown of the model improvements over the legacy spectrogram diffusion methods.\n\n## Core Capabilities\n",
+    "_searchMeta": {
+      "cleanContent": "the fuzz-2 0 engine technical breakdown of the model improvements over the legacy spectrogram diffusion methods core capabilities",
+      "headings": [
+        "Core Capabilities"
+      ],
+      "keywords": [
+        "Core Capabilities"
+      ]
+    }
+  },
+  {
+    "slug": "/getting-started/introduction",
+    "title": "Introduction",
+    "description": "Producer.ai represents the evolution of AI music generation.",
+    "content": "# Introduction\n\nProducer.ai represents the evolution of AI music generation. Moving beyond the static prompts of Riffusion v1, Producer.ai introduces an **agentic workflow** powered by the new **FUZZ-2.0 audio model**.\n\n## What's New?\n",
+    "_searchMeta": {
+      "cleanContent": "introduction producer ai represents the evolution of ai music generation moving beyond the static prompts of riffusion v1 producer ai introduces an agentic workflow powered by the new fuzz-2 0 audio model what s new",
+      "headings": [
+        "What's New?"
+      ],
+      "keywords": [
+        "What's New?",
+        "agentic workflow",
+        "FUZZ-2.0 audio model"
+      ]
+    }
+  },
+  {
+    "slug": "/guides/licensing",
+    "title": "Licensing",
+    "description": "Information about commercial usage and rights.",
+    "content": "# Licensing\n\n*Content to be added...*\n",
+    "_searchMeta": {
+      "cleanContent": "licensing content to be added",
+      "headings": [],
+      "keywords": []
+    }
+  },
+  {
+    "slug": "/guides/songwriting-guide",
+    "title": "Songwriting Guide",
+    "description": "Best practices for generating music with Producer.ai.",
+    "content": "# Songwriting Guide\n\nThe most common mistake is trying to generate a full 3-minute song in one prompt. The best results come from a **component-based workflow**.\n",
+    "_searchMeta": {
+      "cleanContent": "songwriting guide the most common mistake is trying to generate a full 3-minute song in one prompt the best results come from a component-based workflow",
+      "headings": [],
+      "keywords": [
+        "component-based workflow"
+      ]
+    }
+  }
+]

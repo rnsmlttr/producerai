@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 240px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .control-group {
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    select {
+      width: 100%;
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    button:disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+    }
+
+    .note {
+      font-size: 11px;
+      color: #666;
+      margin-top: 12px;
+      line-height: 1.4;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    .warning {
+      color: #856404;
+      background-color: #fff3cd;
+      padding: 5px;
+      border-radius: 4px;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Producer.ai Download Suite</h3>
+
+  <div class="control-group">
+    <label>Presets:</label>
+    <select id="downloadMode">
+      <option value="selected">Selected Only *</option>
+      <option value="all">All Visible Songs</option>
+      <option value="playlist">Full Playlist</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Format:</label>
+    <select id="formatMode">
+      <optgroup label="Tracks (Direct)">
+        <option value="wav">WAV</option>
+        <option value="mp3">MP3</option>
+        <option value="m4a">M4A</option>
+      </optgroup>
+      <optgroup label="Tracks (Zipped)">
+        <option value="tracks_zip_wav">WAV</option>
+        <option value="tracks_zip_mp3">MP3</option>
+        <option value="tracks_zip_m4a">M4A</option>
+      </optgroup>
+      <optgroup label="Stems">
+        <option value="stems_zip">Zipped</option>
+        <option value="stems">Unzipped (Folder)</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Output:</label>
+    <select id="folderMode">
+      <option value="none">Default Download Folder</option>
+      <option value="generic">Generic (Prod.AI Downloads)</option>
+      <option value="smart">Smart (Playlist/Page Title)</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Metadata:</label>
+    <select id="metadataMode">
+      <option value="keep">Keep All (Default)</option>
+      <option value="clean">Remove "Where From" / Source</option>
+      <option value="none">Remove All Metadata (Clean)</option>
+    </select>
+  </div>
+
+  <div class="control-group">
+    <label>Theme:</label>
+    <select id="themeMode">
+      <option value="default">Native (Default)</option>
+      <option value="midnight">Midnight (Dark)</option>
+      <option value="forest">Forest (Dark)</option>
+      <option value="sunset">Sunset (Dark)</option>
+      <option value="ice">Ice (Light)</option>
+      <option value="sage">Sage (Light)</option>
+      <option value="coral">Coral (Light)</option>
+    </select>
+  </div>
+
+  <button id="searchBtn" style="background:#555; margin-bottom:8px;">🔍 Search / Filter Library</button>
+  <button id="downloadBtn">Start Download</button>
+
+  <div class="note">
+    <strong>Instructions:</strong><br>
+    * <em>Selected Only</em> works EXCLUSIVELY on Library page.<br><br>
+    For <em>All Visible Songs</em>: Scroll down to load more. Works in Session chats too (captures all
+    generations).<br><br>
+    For <em>Playlists</em>: Navigate to the Playlist page, choose Format/Output, then hit Start. No checkboxes needed.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # Producer.ai Download Suite
 
-**Version 3.2** | *By rnsmlttr*
+**Version 3.2** | *By rnsmlttr* | [**Download Latest Release**](https://github.com/rnsmlttr/producerai/releases/latest)
 
 The ultimate downloading toolkit for Producer.ai. This universal browser extension transforms your workflow by taking advantage of the new bulk download functions Prod added, allowing for bulk downloads of tracks, stems, and diverse formats with powerful organization features.
 

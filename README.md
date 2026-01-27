@@ -1,10 +1,10 @@
-# producerai
+# Producer.ai Tools & Extensions
 
-main repository for the producer.ai suite.
+main repository for the producer.ai suite of tools
 
 ## contents
 
-- **extension/**: the chrome/firefox browser extension.
+- **extension/**: the universal browser extension.
 - **docs/**: the documentation site (next.js).
 
 ## setup
